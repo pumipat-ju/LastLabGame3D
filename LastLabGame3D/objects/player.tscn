@@ -53,7 +53,6 @@ normal_fade = 0.5
 
 [node name="ParticlesTrail" type="GPUParticles3D" parent="."]
 physics_interpolation_mode = 2
-visible = false
 material_override = SubResource("StandardMaterial3D_q7stj")
 cast_shadow = 0
 amount = 60
