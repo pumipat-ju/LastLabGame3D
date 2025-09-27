@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bqqgyqafm7xwp"]
+[gd_scene load_steps=18 format=3 uid="uid://bqqgyqafm7xwp"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ahusb"]
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
@@ -22,6 +22,10 @@ font_size = 48
 shadow_color = Color(0, 0, 0, 0.376471)
 shadow_offset = Vector2(2, 2)
 
+[sub_resource type="LabelSettings" id="LabelSettings_jkv2x"]
+font = ExtResource("17_tk810")
+font_size = 32
+
 [node name="Main" type="Node3D"]
 script = ExtResource("1_jkv2x")
 
@@ -31,8 +35,6 @@ environment = ExtResource("1_ahusb")
 [node name="Player" parent="." node_paths=PackedStringArray("view") groups=["player"] instance=ExtResource("2_onms2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.492775, 0)
 view = NodePath("../View")
-movement_speed = 250.0
-jump_strength = 7.0
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target")]
 transform = Transform3D(0.707107, -0.298836, 0.640856, 0, 0.906308, 0.422618, -0.707107, -0.298836, 0.640856, 0, 0, 0)
@@ -213,5 +215,15 @@ offset_bottom = 123.0
 text = "0"
 label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="HUD"]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 69.0
+offset_right = 1187.0
+offset_bottom = 113.0
+text = "นายภูมิพัฒน์ จำเริญเนาว์ 663380290-8"
+label_settings = SubResource("LabelSettings_jkv2x")
+horizontal_alignment = 2
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]

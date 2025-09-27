@@ -18,7 +18,7 @@ colors = PackedColorArray(0.996094, 0.910156, 0.351563, 1, 1, 1, 1, 1)
 gradient = SubResource("Gradient_pm7ss")
 
 [sub_resource type="Curve" id="Curve_y3bws"]
-_data = [Vector2(0.0075757504, 0.8651686), 0.0, 0.018773995, 0, 0, Vector2(0.9924243, 0), -3.356592, 0.0, 0, 0]
+_data = [Vector2(0.00757575, 0.865169), 0.0, 0.018774, 0, 0, Vector2(0.992424, 0), -3.35659, 0.0, 0, 0]
 point_count = 2
 
 [sub_resource type="CurveTexture" id="CurveTexture_iwokp"]
@@ -33,9 +33,9 @@ direction = Vector3(0, 10, 0)
 spread = 40.0
 initial_velocity_min = 4.0
 initial_velocity_max = 6.0
-linear_accel_min = -2.0000021
-linear_accel_max = -1.0000023
-scale_min = 0.29999998
+linear_accel_min = -2.0
+linear_accel_max = -1.0
+scale_min = 0.3
 scale_curve = SubResource("CurveTexture_iwokp")
 color_ramp = SubResource("GradientTexture1D_1o7s2")
 
@@ -55,7 +55,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 shape = SubResource("BoxShape3D_jkv2x")
 
 [node name="Particles" type="GPUParticles3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25192702, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.251927, 0)
 material_override = ExtResource("3_2u2la")
 emitting = false
 amount = 5
