@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://deoeyp374x6d2"]
+
+[ext_resource type="PackedScene" uid="uid://bmld4b2lr4g1p" path="res://models/Ninja.glb" id="1_fssyu"]
+
+[node name="Ninja" instance=ExtResource("1_fssyu")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
